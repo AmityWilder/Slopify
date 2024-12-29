@@ -84,7 +84,7 @@
         top: 0;
         font-weight: bold;
       }
-      
+
       .skipnav:focus,
       .skipnav:active {
         z-index: 99;
@@ -217,7 +217,7 @@
       #d {
         font-size: 0.75em;
       }
-       
+
       .fourier-container {
         text-align: center;
       }
@@ -230,6 +230,8 @@
         font-family: var(--font);
         background: radial-gradient(circle, #b00b69, rgb(145, 69, 221));
         color: white;
+      } /* added a '}' here because there wasn't one before and it was eating the `#foxy` rule */
+
       #foxy {
         height: 600px;
         width: auto;
@@ -427,13 +429,13 @@
       <image id="frog" src="static/images/frog.webp"></image>
       <button id="vibeButton">Improve the Mood</button>
       <button id="wisdomButton">ENABLE FROG WISDOM</button>
-      <p>Vist SlopChat™ to chat with other slop enthusiasts. <a href="chat.html">Click here!/a></p>
+      <p>Vist SlopChat™ to chat with other slop enthusiasts. <a href="chat.html">Click here!</a></p> <!-- the '<' was missing and was breaking the link -->
       <a href="https://www.hitwebcounter.com" target="_blank">
         <img
           src="https://hitwebcounter.com/counter/counter.php?page=18132009&style=0010&nbdigits=9&type=page&initCount=0"
           title="Counter Widget"
           alt="Visit counter For Websites"
-          border="0"
+          style="border:0"
       /></a>
     </header>
     <main id="maincontent">
@@ -456,13 +458,13 @@
 
         <div style="display: flex; flex-direction: row;">
 
-          <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">hahahaha this is fire</p>&mdash; ily⚡️ (@0xIlyy) <a href="https://twitter.com/0xIlyy/status/1873179308153553050?ref_src=twsrc%5Etfw">December 29, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-          
-          <blockquote class="twitter-tweet" data-conversation="none" data-theme="dark"><p lang="en" dir="ltr">WHO THE FUCK ADDED PASSWORD GAME TO THE REGISTRATION PAGE <a href="https://t.co/FYpWT5dycz">pic.twitter.com/FYpWT5dycz</a></p>&mdash; Aterron (@_aterron_) <a href="https://twitter.com/_aterron_/status/1873444464255254743?ref_src=twsrc%5Etfw">December 29, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+          <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">hahahaha this is fire</p>&mdash; ily⚡️ (@0xIlyy) <a href="https://twitter.com/0xIlyy/status/1873179308153553050?ref_src=twsrc%5Etfw">December 29, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-          <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">help i played the sexy frog music and now it keeps playing even after i close the browser</p>&mdash; colin ricardo (@_colinricardo) <a href="https://twitter.com/_colinricardo/status/1873429683368505464?ref_src=twsrc%5Etfw">December 29, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+          <blockquote class="twitter-tweet" data-conversation="none" data-theme="dark"><p lang="en" dir="ltr">WHO THE FUCK ADDED PASSWORD GAME TO THE REGISTRATION PAGE <a href="https://t.co/FYpWT5dycz">pic.twitter.com/FYpWT5dycz</a></p>&mdash; Aterron (@_aterron_) <a href="https://twitter.com/_aterron_/status/1873444464255254743?ref_src=twsrc%5Etfw">December 29, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-          <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">This project is awesome the amount of random slop added in the last 24 hours alone is crazy. Check it out <a href="https://t.co/GDD8ut9A4S">https://t.co/GDD8ut9A4S</a></p>&mdash; Gil (@TylerGilman01) <a href="https://twitter.com/TylerGilman01/status/1873429461410234849?ref_src=twsrc%5Etfw">December 29, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+          <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">help i played the sexy frog music and now it keeps playing even after i close the browser</p>&mdash; colin ricardo (@_colinricardo) <a href="https://twitter.com/_colinricardo/status/1873429683368505464?ref_src=twsrc%5Etfw">December 29, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+          <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">This project is awesome the amount of random slop added in the last 24 hours alone is crazy. Check it out <a href="https://t.co/GDD8ut9A4S">https://t.co/GDD8ut9A4S</a></p>&mdash; Gil (@TylerGilman01) <a href="https://twitter.com/TylerGilman01/status/1873429461410234849?ref_src=twsrc%5Etfw">December 29, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
         </div>
       </div>
@@ -655,7 +657,7 @@
           <span id="stock_ticker" style="color: yellow"></span
           ><span id="stock_msg"></span>
         </p>
-        <img src="" id="stock_img" />
+        <img id="stock_img" /> <!-- removed 'img' attribute because it gets set by code anyway and the empty 'img' was creating a warning -->
       </section>
       <section>
         <script>
@@ -696,19 +698,19 @@
         <ul>
           <li><a href="https://motherfuckingwebsite.com/" target="_blank">This is a motherfucking website. And it's fucking perfect.</a></li>
           <li><a href="http://bettermotherfuckingwebsite.com/" target="_blank">This is still a motherfucking website.
-          And it's more fucking perfect than the last guy's.</a>
+          And it's more fucking perfect than the last guy's.</a></li> <!-- the `</li>` was missing and it was breaking the ul a lil -->
           <li><a href="https://nohello.net/" target="_blank">no hello - please don't say just hello in chat</a></li>
           <li><a href="https://dontasktoask.com/" target="_blank">Don't ask to ask, just ask</a></li>
         </ul>
       </section>
       <section>
         <button id="widenButton">Toggle Widening</button>
-      
+
         <script>
           const widenButton = document.getElementById("widenButton");
           let widening = false;
           let interval;
-      
+
           widenButton.addEventListener("click", () => {
             if (!widening) {
               widening = true;
