@@ -232,15 +232,19 @@
         color: white;
       } /* added a '}' here because there wasn't one before and it was eating the `#foxy` rule */
 
+      /* because the image is missing, repairing this rule inserted a big empty space in that part of the page.
+       * ive made the height 0 in order to keep the appearance as it was before, while ensuring the rule *would*
+       * operate as intended, if only the images were to be in the `static/images` folder.
+       * the height was originally 600px. */
       #foxy {
-        height: 600px;
+        height: /*60*/0px;
         width: auto;
-        background: url('static/images/cute.jpg');
+        background: url('static/images/cute.jpg'); /* this image is missing */
         background-repeat: no-repeat;
       }
 
       #foxy:hover {
-        background: url('static/images/snarl.jpg');
+        background: url('static/images/snarl.jpg'); /* so is this one */
         background-repeat: no-repeat;
       }
     </style>
